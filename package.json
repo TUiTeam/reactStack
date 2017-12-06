@@ -1,0 +1,38 @@
+{
+  "name": "reactstack",
+  "version": "0.0.1",
+  "description": "React Stack Base Template",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack/config.dev.js --color --progress",
+    "build": "webpack --config ./webpack/config.prod.js --progress",
+    "eslint": "eslint --fix app/ --ext .js --color",
+    "doc": "esdoc -c .esdoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratheeshkannan/reactStack.git"
+  },
+  "keywords": [
+    "reactstack"
+  ],
+  "author": "Ratheesh Kannan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ratheeshkannan/reactStack/issues"
+  },
+  "homepage": "https://github.com/ratheeshkannan/reactStack#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "esdoc": "^1.0.4",
+    "esdoc-standard-plugin": "^1.0.0",
+    "webpack": "^3.10.0"
+  }
+}
