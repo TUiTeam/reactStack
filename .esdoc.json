@@ -1,0 +1,38 @@
+{
+  "source": "./app",
+  "destination": "./docs",
+  "package.json": "./package.json",
+  "plugins": [
+    {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
+        "all": true
+      }
+    },
+    {
+      "name": "esdoc-standard-plugin"
+    },
+    {
+      "name": "esdoc-react-plugin"
+    },
+    {
+      "name": "esdoc-coverage-plugin",
+      "option": {
+        "enable": true,
+        "kind": ["class", "method", "member", "get", "set", "constructor", "function", "variable"]
+      }
+    },
+    {
+      "name": "esdoc-jsx-plugin",
+      "option": {
+        "enable": true
+      }
+    },
+    {
+      "name": "esdoc-brand-plugin",
+      "option": {
+        "logo": "./assets/images/logo.png"
+      }
+    }
+  ]
+}
